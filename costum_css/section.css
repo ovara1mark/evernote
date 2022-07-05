@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color:rgb(20, 204, 69);
+    --bg-color-gn:rgb(0, 168, 45);
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin-top: 4rem;
+    text-align: center;
+    color: black;
+    padding-top: 3rem;
+}
+
+.header-h1{
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 1.7em;
+}
+
+.header-p{
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    padding-left: 14rem;
+    padding-right: 13rem;
+    text-align: center;
+    padding-bottom: 1.1em;
+}
+
+.header-btn{
+    width: 18rem;
+    height: 2.7rem;
+    text-align: center;
+    border-radius: .2rem;
+    border: 2px solid var(--bg-color-gn);
+    background-color:var(--bg-color-gn);
+    color:white;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.header-btn:hover{
+    background-color:var(--bg-color);
+    border: 2px solid var(--bg-color);
+}
+
+.header div a{
+    text-decoration: underline;
+    color: black;
+   font-size: 1.2rem;
+}
+
+.header div{
+     padding-top: 1rem;
+}
+
+.header div a:hover{
+    color: var(--bg-color-gn);
+}
+
+@media screen and (max-width:1200px){
+    .header-h1{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .header-p{
+        font-size: 1.5rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    
+}
+
+@media screen and (max-width:1150px){
+    .header-p{
+        font-size: 1.5rem;
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+}
+
+@media screen and (max-width:990px){
+    .header-h1{
+        font-size: 3rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media screen and (max-width:810px){
+    .header-p{
+        font-size: 1.5rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media screen and (max-width:670px){
+    .header-h1{
+        font-size: 3rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    .header-p{
+        font-size: 1.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header-h1{
+        font-size: 2.2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        line-height: 1.2em;
+    }
+
+    .header-p{
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-bottom:1.2rem;
+    }
+
+    .header{
+        margin-top: 5rem;
+    }
+}

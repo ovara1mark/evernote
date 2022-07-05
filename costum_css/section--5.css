@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:black;
+    font-family:"Soleil",Helvetica,Arial,sans-serif;
+}
+
+:root{
+    --bg-color:rgb(20, 204, 69);
+    --bg-color-gn:rgb(0, 168, 45);
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagy{
+    padding-bottom: 1rem;
+}
+
+.pricing-table{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.column-one, .column-two, .column-three{
+    width:25%;
+    background-color: #F8F8F8;
+    /* border: 1px solid black; */
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+}
+
+.f-caret{
+    display: none;
+}
+
+.section-5{
+    /* border: 1px solid black; */
+    margin-top: 24em;
+}
+
+.heading-uppercase p{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+
+}
+
+.price-uppercase p{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+#up{
+    display: none;
+}
+
+.price-uppercase p span{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.noted p{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.icon-text{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+
+.section-icon i{
+    color: var(--bg-color-gn);
+}
+
+.section-icon{
+    margin-right: .5rem;
+}
+
+.arrow-1, .arrow-2{
+    padding-top: 1rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.arrow-icon{
+    padding-top: 1.1rem;
+}
+
+.subscription-link button{
+    max-width: 100%;
+    width:100%;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: .2rem;
+    border: 2px solid var(--bg-color-gn);
+    background-color: var(--bg-color-gn);
+    
+}
+
+.subscription-link button a{
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.pricing-intro h2{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.pricing-intro p{
+    font-size: 1.5rem;
+    font-weight: 510;
+    width: 65%;
+    text-align: center;
+    /* border:1px solid black; */
+    padding-bottom: 1rem;
+}
+
+.pricing-intro a {
+    color: var(--bg-color-gn);
+    font-size: 1rem;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.pricing-intro a i{
+    color: var(--bg-color-gn);
+    font-size: 1rem;
+}
+
+.team-plan{
+    display: flex;
+    justify-content: space-between;
+    width:850px;
+    border-radius: 1rem;
+    border: 2px solid #e2dfdf;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.team-uppercase h3{
+    font-size: 1.4rem;
+    padding-bottom: .2rem;
+}
+
+.price-team-uppercase p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: .2rem;
+}
+
+.price-team-uppercase p span{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.team-uppercase button{
+    display: none;
+}
+
+.team-plan-icon button{
+    border: none;
+    background-color: white;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.team-plan-icon button i{
+    color: var(--bg-color-gn);
+}
+
+.team-plan-button{
+    display: none;
+}
+
+@media screen and (max-width:1056px) {
+    .heading-uppercase p{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    
+    }
+    
+    .price-uppercase p{
+        font-size: 2.2rem;
+        font-weight: 600;
+    
+    }
+
+    .subscription-link button a{
+        text-decoration: none;
+        color: white;
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+    }
+}
+
+@media screen and (max-width:1056px) {
+    .heading-uppercase p{
+        font-size: 1.2rem;   
+    }
+    
+    .price-uppercase p{
+        font-size: 2rem;
+    }
+
+    .subscription-link button a{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .heading-uppercase p{
+        font-size: 1.7rem;   
+    }
+    
+    .price-uppercase p{
+        font-size: 2.3rem;
+    }
+
+    .subscription-link button {
+        margin-bottom: 1.2rem;
+    }
+
+    .subscription-link button a{
+        font-size: .9rem;
+    }
+
+    .f-caret{
+        display: block;
+    }
+
+    .f-caret button{
+        border: none;
+        cursor: pointer;
+        background-color: #F8F8F8;;
+    }
+
+    .f-caret button i{
+        color: var(--bg-color-gn);
+    }
+
+    .heading-with-icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .8rem;
+    }
+
+    .pricing-table{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .column-one,.column-two,.column-three{
+        width: 90%;
+        border-radius: 1rem;
+        margin-top: 2rem;
+    }
+
+    #up{
+        display: block;
+    }
+
+    #left{
+        display: none;
+    }
+
+    .dis-none{
+        display: none;
+    }
+    
+    .pagy{
+        padding-bottom: 0;
+    }
+
+    .noted{
+        padding-bottom: 1rem;
+    }
+
+    .pricing-intro h2{
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+    
+    .pricing-intro p{
+        font-size: 1.1rem;
+        font-weight: 510;
+        width: 90%;
+        text-align: center;
+        /* border:1px solid black; */
+        padding-bottom: 1rem;
+    }
+    
+    .pricing-intro a {
+        display: none;
+    }
+
+    .team-uppercase h3{
+        font-size: 1.2rem;
+    }
+    
+    .price-team-uppercase p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-5{
+        /* border: 1px solid black; */
+        margin-top: 5em;
+    }
+
+    .team-plan-icon button i{
+        font-size: 1.5rem;
+    }
+
+    .team-plan-icon{
+        padding-top: -3rem;
+        display: none;
+    }
+
+    .team-uppercase{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .team-uppercase button i{
+        font-size: 1.5rem;
+        color:var(--bg-color-gn)
+    }
+
+    .team-uppercase button {
+        border: none;
+        background-color: white;
+        display: block;
+    }
+
+    .team-plan{
+        display: block;
+    }
+
+    .team-plan-button button{
+        max-width: 100%;
+        width:100%;
+        height: 2.5rem;
+        text-align: center;
+        border-radius: .2rem;
+        border: 2px solid var(--bg-color-gn);
+        background-color: var(--bg-color-gn);
+        
+    }
+
+    .team-plan-button{
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .team-plan-button button a{
+        text-decoration: none;
+        color: white;
+        font-size: .9rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+    }
+}

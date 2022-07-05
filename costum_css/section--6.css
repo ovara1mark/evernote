@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:black;
+    font-family:"Soleil",Helvetica,Arial,sans-serif;
+}
+
+:root{
+    --bg-color:rgb(20, 204, 69);
+    --bg-color-gn:rgb(0, 168, 45);
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+.section-6-logo{
+    margin-top: 5rem;
+    padding-left: 4rem;
+}
+
+.section-6-footer{
+    display: flex;
+    border-top: 3px solid black;
+    margin-left: 64px;
+    margin-right: 64px;
+    padding-top: 3rem;
+    margin-top: 2.5rem;
+}
+
+.section-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+    margin-right: 3rem;
+
+} 
+
+.section-footer ul li a{
+    color: black;
+    font-size: .9rem;
+}
+
+.section-footer ul li a:hover{
+    color:var(--bg-color-gn);
+
+}
+
+.section-footer ul li {
+    line-height: 3em;
+}
+
+.section-footer ul li h3{
+    color: black;
+    font-size: .9rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.icons-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.img-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+footer{
+    padding-top: 5rem;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.arrow-caret-selector button{
+    border: none;
+    background-color: white;
+}
+
+.arrow-caret-selector button i{
+    font-size: .8rem;
+}
+
+.span-1{
+    font-size: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.span-1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.span-1 a:hover{
+    color: var(--bg-color);
+}
+
+.span-1 a strong:hover{
+    color: var(--bg-color);
+}
+
+
+.icon-footer-2{
+    display: none;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.foot-1 p{
+    font-size: .8rem;
+    color:#949292;
+}
+
+.foot-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+
+}
+
+.foot-2 a{
+        font-size: .8rem;
+        color:#949292;
+        
+}
+
+.foot-2 a:hover{
+    color:black;
+    
+}
+
+.foot-logo{
+    display: none;
+}
+@media screen and (max-width:970px) {
+    .section-footer ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-right: 2rem;
+    } 
+
+    .section-6-footer{
+        display: flex;
+        border-top: 3px solid black;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    footer{
+        padding-top: 5rem;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .section-footer ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-right: 1rem;
+    } 
+
+    .section-footer ul li a{
+        color: black;
+        font-size: .8rem;
+    }
+
+}
+
+
+@media screen and (max-width:725px) {
+    .section-footer ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-right: 1rem;
+    } 
+
+    .section-6-footer{
+        display: block;
+    }
+
+    .section-footer ul li a{
+        color: black;
+        font-size: .9rem;
+    }
+
+    .section-footer ul li h3{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .split-1 a, .split-2 a{
+        text-decoration: none;
+        color: black;
+        font-size: .9rem;
+
+    }
+
+    .span-1 a i{
+        font-size: .9rem;
+    }
+
+    .split-1 a{
+        font-weight: bold;
+    }
+
+    .icon-footer-2{
+        display: block;
+    }
+
+    .footer-split{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+
+
+    .icon-footer-2 > .img-icons{       
+        width: 100%;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid black;
+    }
+
+    .icon-footer-2 > .img-icons img{
+        width: 4rem;
+        padding-right: 1rem;
+    }
+    .icons-footer{
+        display: none;
+    }
+
+    .foot{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    .foot-1 p{
+        padding-top: 3rem;
+        font-size: .8rem;
+        color:#949292;
+    }
+    
+    .foot-2 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    
+    }
+    
+    .foot-2 a{
+            font-size: .8rem;
+            color:#949292;      
+    }
+
+    .foot-logo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+}
